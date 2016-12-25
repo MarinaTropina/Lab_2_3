@@ -18,26 +18,25 @@ public class MyWindow {
         this.color = color;
         this.isOpen = isOpen;
     }
-    //lab 2.3.2
-    public void printFields() {
-        System.out.println("Widht=" + width + ", height=" + height + ", numberOfGlass=" + numberOfGlass +
-                ", color=" + color + ", isOpen=" + isOpen);
-    }
     public MyWindow(){
         this.width = 3.6;
         this.height = 4.5;
         this.color = "black";
 
     }
-    //lab 2.3.3
+    //lab 2.3.4
     public MyWindow(double width, double height){
-        this.width = width;
-        this.height = height;
+        this(width, height, 0);
     }
+
     public MyWindow(double width, double height, int numberOfGlass){
-        this.width = width;
-        this.height = height;
-        this.numberOfGlass = numberOfGlass;
+        this(width, height, numberOfGlass, null, false);
+    }
+
+    //lab 2.3.2
+    public void printFields() {
+        System.out.println("Widht=" + width + ", height=" + height + ", numberOfGlass=" + numberOfGlass +
+                ", color=" + color + ", isOpen=" + isOpen);
     }
 
 
