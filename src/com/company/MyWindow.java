@@ -25,11 +25,11 @@ public class MyWindow {
 
     }
     //lab 2.3.4
-    public MyWindow(double width, double height){
+    public MyWindow(double width, double height){ //обращаемся к следующему конструктору, в котором 3 переменных
         this(width, height, 0);
     }
 
-    public MyWindow(double width, double height, int numberOfGlass){
+    public MyWindow(double width, double height, int numberOfGlass){ //
         this(width, height, numberOfGlass, null, false);
     }
 
